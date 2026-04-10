@@ -32,3 +32,7 @@ def jprint(obj):
 
 jprint(response.json())
 ```
+```ruby
+response = requests.get("https://api-server.dataquest.io/economic_data/countries?filter_by=region=Sub-Saharan%20Africa") 
+data = response.json()
+```
