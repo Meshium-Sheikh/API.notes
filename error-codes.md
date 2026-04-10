@@ -22,3 +22,13 @@ json.dumps(): Converts a Python object into a JSON string.
 json.loads(): Converts a JSON string into a Python object.
 Using dumps(), we can format JSON data for better readability:
 ```
+```opal
+import json
+
+# create a formatted string of the Python JSON object
+def jprint(obj):  
+    text = json.dumps(obj, sort_keys=True, indent=4) 
+    print(text) 
+
+jprint(response.json())
+```
