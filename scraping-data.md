@@ -42,3 +42,10 @@ response = requests.get(url, headers=headers)
 print(response.status_code)
 print(response.json())
 ```
+new file 
+```python ruby
+# didn't work the first time I tried but you can modify these 
+load_dotenv()
+KEY = os.getenv("RAPIDAPI_KEY")
+print(KEY)
+```
