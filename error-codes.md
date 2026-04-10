@@ -21,4 +21,4 @@ The json library provides two essential functions:
 json.dumps(): Converts a Python object into a JSON string.
 json.loads(): Converts a JSON string into a Python object.
 Using dumps(), we can format JSON data for better readability:
-``
+```
