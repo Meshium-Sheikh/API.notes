@@ -74,5 +74,13 @@ print(df[['name', 'country_code', 'country_gdp']].head())
 5. Where is the value?    → dig into the JSON response
 6. How do I do it smart?  → unique only + map back
 ```
-
-
+- What Went Wrong
+---
+1. The data frame had missing values which meant that our run/except was running and we didn't get the correct data ,so now first we will drop them
+```pandas ruby
+df_clean = df.dropna(subset=['country_code'].copy)
+df_clean['country_code'] = df_clean['country_code'].str.strip()
+```
+- we can use clean variable twice thats okay
+- Two most variables : df_raw & df_clean
+- always add .copy() : it creates a new copy from the og data without messing it
