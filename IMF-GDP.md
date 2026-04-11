@@ -1,4 +1,6 @@
 ## cell 1 & cell 2
+***For our Startup success determinanct project we're using the IMF API
+After loading the zip data we removed the empty spaces and then we called from API***
 ---
 ### Cell 1
 ---
